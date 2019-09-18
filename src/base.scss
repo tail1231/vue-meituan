@@ -1,0 +1,11 @@
+//header背景颜色
+$navColor:#06c1ae;
+//定义箭头混合
+@mixin arrow($w:10px , $c:#000, $dir:top) {
+    //兼容行内元素和块元素
+    font-size: 0;
+    width: 0;
+    border: $w solid transparent;
+    //设置特殊边颜色
+    border-#{$dir}-color: $c;
+}
